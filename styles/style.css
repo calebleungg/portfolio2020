@@ -74,11 +74,15 @@ p {
   margin-left: 5vw;
 }
 
+.about-wrapper span {
+  font-weight: 700;
+}
+
 .about-wrapper img {
-  width: 75vw;
+  width: 60vw;
   height: auto;
   border-radius: 100%;
-  padding: 0 5vw;
+  padding: 0 15vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -149,7 +153,7 @@ p {
 
 .project-wrapper .project-item h3 {
   position: absolute;
-  top: 20%;
+  top: 17%;
   width: 100%;
   text-align: center;
   color: white;
@@ -236,5 +240,107 @@ p {
   height: 200px;
   width: 200px;
   border-radius: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  #title-text {
+    font-size: 200%;
+    left: 25% !important;
+    top: 50% !important;
+  }
+  #title-text i {
+    font-size: 80% !important;
+  }
+  #intro-quote {
+    width: 35vw;
+  }
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-wrapper {
+    width: 400px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .about-wrapper img {
+    width: 200px;
+    height: 200px;
+    padding: 0 !important;
+  }
+  .about-wrapper p {
+    line-height: 2.2;
+  }
+  .skills-wrapper {
+    width: 220px;
+  }
+  .skills-wrapper p {
+    margin: 20px 0 !important;
+  }
+  .skills-wrapper p:last-child {
+    margin-bottom: 100px;
+  }
+  .project-wrapper {
+    text-align: center;
+  }
+  .project-wrapper .project-item {
+    width: 350px !important;
+    margin: 10px !important;
+  }
+  .project-wrapper .project-item img {
+    width: 350px !important;
+    height: 200px;
+  }
+  .project-wrapper .greyout {
+    width: 350px !important;
+  }
+  .project-wrapper .project-desc {
+    width: 310px !important;
+    padding: 20px !important;
+    margin: 0 !important;
+  }
+  .project-wrapper h3 {
+    top: 17%;
+    width: 100% !important;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+  }
+  .project-wrapper .project-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  #hobby {
+    width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project-list {
+    max-width: 75vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -70,11 +70,14 @@ p {
     margin: 20px 0;
     margin-right: 5vw;
     margin-left: 5vw;
+    span {
+        font-weight: 700;
+    }
     img {
-        width: 75vw;
+        width: 60vw;
         height: auto;
         border-radius: 100%;
-        padding: 0 5vw;
+        padding: 0 15vw;
         align-self: center;
     }
     p {
@@ -134,7 +137,7 @@ p {
        }
        h3 {
            position: absolute;
-           top: 20%;
+           top: 17%;
            width: 100%;
            text-align: center;
            color: white;
@@ -210,5 +213,104 @@ p {
         height: 200px;
         width: 200px;
         border-radius: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #title-text {
+        font-size: 200%;
+        // margin-left: 20%;
+        left: 25% !important;
+        top: 50% !important;
+        i {
+            font-size: 80% !important;
+        }
+    }
+
+    #intro-quote {
+        width: 35vw;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-wrapper {
+        width: 400px;
+        margin: 0 !important;
+        padding: 0 !important;
+        img {
+            width: 200px;
+            height: 200px;
+            padding: 0 !important;
+        }
+        p {
+            line-height: 2.2;
+        }
+    }
+
+    .skills-wrapper {
+        width: 220px;
+        // padding-top: 100px;
+        p {
+            margin: 20px 0 !important;
+            &:last-child {
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    .project-wrapper {
+        text-align: center;
+        .project-item {
+            width: 350px !important;
+            img {
+                width: 350px !important;
+                height: 200px;
+            }
+            margin: 10px !important;
+        }
+        .greyout {
+            width: 350px !important;
+        }
+         .project-desc {
+             width: 310px !important;
+             padding: 20px !important;
+             margin: 0 !important;
+             
+         }
+         h3 {
+            top: 17%;
+            width: 100% !important;
+            text-align: center;
+            color: white;
+            font-size: 150%;
+         }
+         .project-list {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+            //  max-width: 75vw;
+         }
+    }
+    .top-row {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    #hobby {
+        width: 35vw;
+    }
+    
+  
+}
+
+@media screen and (min-width: 1600px) {
+    .project-list {
+        max-width: 75vw;
     }
 }
