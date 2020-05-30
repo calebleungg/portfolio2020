@@ -11,6 +11,10 @@
     </head>
 
     <body>
+        <div id="nightmode-toggle">
+            <i class="far fa-moon" id='moon-icon'></i>
+            <input type="checkbox" class='nightmode-toggle' id="switch" /><label for="switch">Toggle</label>
+        </div>
 
         <div class="title-img">
             <img src="./images/gaming-pic.jpeg" alt="">
@@ -57,6 +61,14 @@
                 <p id="sub-title">PORTFOLIO</p>
                 <div class="project-list">
                     <div class="project-item">
+                        <a href="https://nocovidhere.netlify.app/" target="blank" class="project-image">
+                            <img src="./images/nocovidhere.png" alt="">
+                            <div class="greyout"></div>
+                            <h3>NoCovidHere</h3>
+                        </a>
+                        <p class="project-desc">A news website made as part of a hackathon for Coder Academy, centered around providing non-covid related news. Tech stack included MongoDb, Express.js, Javascript, Node. </p>
+                    </div>
+                    <div class="project-item">
                         <a href="https://chefhero.herokuapp.com" target="blank" class="project-image">
                             <img src="./images/chefhero.png" alt="">
                             <div class="greyout"></div>
@@ -99,7 +111,7 @@
                     <div class="project-item">
                         <a href="https://github.com/calebleungg/terminalHRM" target="blank" class="project-image">
                             <img src="./images/terminal-ss.png" alt="">
-                            <!-- <div class="greyout"></div> -->
+                            <div class="greyout"></div>
                             <h3>Terminal HRM (Ruby/Java)</h3>
                         </a>
                         <p class="project-desc">A script programmed in Ruby as the first iteration my later Rails Human Resource Managemenet Sass program. To practice and try learning a new language, I then redeveloped the script in Java. </p>
@@ -120,6 +132,7 @@
             </div>
 
         </div>
+        <script type="text/javascript" src="./styles/script.js"></script>
         
     </body>
 

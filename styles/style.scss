@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+#moon-icon {
+    color: #4d4a4a
+}
+
 .mgn-narrow {
     margin-right: 5vw;
     margin-left: 5vw;
@@ -74,7 +78,7 @@ p {
         font-weight: 700;
     }
     img {
-        width: 60vw;
+        width: 200px;
         height: auto;
         border-radius: 100%;
         padding: 0 15vw;
@@ -312,5 +316,81 @@ p {
 @media screen and (min-width: 1600px) {
     .project-list {
         max-width: 75vw;
+    }
+}
+
+.nightmode {
+    background-color: #4d4a4a;
+    color: white;
+    #sub-title {
+        color: white !important;
+    }
+    .connect-links {
+        a, i {
+            color: white;
+        }
+    }
+    #moon-icon {
+        color: white;
+    }
+}
+
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 35px;
+	height: 20px;
+	background: #4d4a4a;
+	display: block;
+	border-radius: 100px;
+    position: relative;
+    border: 2px solid #4d4a4a;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 15px;
+	height: 16px;
+	background: white;
+    border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+    background: #4d4a4a;
+    border: 2px solid white;
+    
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	// width: 130px;
+}
+
+#nightmode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 20px;
     }
 }
