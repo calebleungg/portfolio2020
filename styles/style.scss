@@ -333,6 +333,16 @@ p {
     #moon-icon {
         color: white;
     }
+    #project-options {
+        button {
+            background-color: #4d4a4a !important;
+            color: white;
+            &:focus {
+                background-color: white !important;
+                color: #4d4a4a
+            }
+        }
+    }
 }
 
 
@@ -381,6 +391,7 @@ label:active:after {
 	// width: 130px;
 }
 
+
 #nightmode-toggle {
     position: fixed;
     top: 10px;
@@ -393,4 +404,32 @@ label:active:after {
     i {
         font-size: 20px;
     }
+}
+
+
+#project-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button {
+        border: none;
+        background-color: white;
+        color: grey;
+        margin: 20px;
+        list-style: none;
+        font-weight: 500;
+        font-size: 80%;
+        padding: 5px 10px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+            background-color: #f0f0f0;
+            // padding: 5px 10px;
+        }
+    }
+}
+
+#invisible {
+    display: none;
 }

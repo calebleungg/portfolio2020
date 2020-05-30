@@ -365,6 +365,16 @@ p {
   color: white;
 }
 
+.nightmode #project-options button {
+  background-color: #4d4a4a !important;
+  color: white;
+}
+
+.nightmode #project-options button:focus {
+  background-color: white !important;
+  color: #4d4a4a;
+}
+
 input[type=checkbox] {
   height: 0;
   width: 0;
@@ -429,5 +439,42 @@ input:checked + label:after {
 
 #nightmode-toggle i {
   font-size: 20px;
+}
+
+#project-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project-options button {
+  border: none;
+  background-color: white;
+  color: grey;
+  margin: 20px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 80%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#project-options button:focus {
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+#invisible {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
