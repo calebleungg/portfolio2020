@@ -21,7 +21,7 @@ for (cat of options) {
         'HTML / CSS': 'static-html',
         'RUBY / RAILS': 'ruby',
         'JAVASCRIPT': 'javascript',
-        'MERN': 'mern'
+        'REACT': 'react'
     }
     cat.addEventListener('click', () => {
         for (project of projects) {
